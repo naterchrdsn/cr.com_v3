@@ -1,0 +1,234 @@
+/*
+Theme Name: cr_theme
+Author: Nate Richardson
+Author URI: http://naterichardson.com
+Description: A hand-coded theme, specially made for Chelsea Richardson
+Version: 1.2.2015
+Text Domain: cr_theme
+*/
+.rmhLogo img {
+	width: 35px;
+}
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'socicon';
+    src: url('assets/font/socicon.eot');
+    src: url('assets/font/socicon.eot?#iefix') format('embedded-opentype'),
+         url('assets/font/socicon.woff') format('woff'),
+         url('assets/font/socicon.ttf') format('truetype'),
+         url('assets/font/socicon.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+body {
+	font-family: 'Lora', serif;
+	color: #261806;
+}
+.navbar-text {
+	font-family: 'Allura', cursive;
+	font-size: 2.3em;
+	margin-left: 0;
+	margin-right: 0;
+}
+.widget-title {
+	font-size: 22px;
+}
+.entry-header .entry-title a {
+	color: #871b1c;
+	font-size: 24px;
+}
+.home-copy {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+img {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: royalblue;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: midnightblue;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.navbar-header div a {
+	text-decoration: none;
+	color: inherit;
+}
+.navbar-collapse a {
+	text-decoration: none;
+}
+.navbar-nav li {
+	width: 40%;
+}
+.navbar-nav {
+	padding-top: 8px;
+	padding-right: 0px;
+	padding-left: 25px;
+}
+.navbar-form {
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 15px;
+	padding-top: 10px;
+}
+.navbar-form .form-group input {
+	width: 100%;
+}
+h1, h3 {
+	font-family: 'Allura', cursive;
+}
+.entry-title {
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+.entry-title a {
+	color: black;
+}
+.entry-meta {
+	color: #999;
+	margin-bottom: 20px;
+}
+.sidebar {
+	margin-top: 50px;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+.widget .welcome-block {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+.comment-respond {
+	margin-top: 25px;
+}
+.comment-author img {
+	width: inherit;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+/*--------------------------------------------------------------
+## WooCommerce CSS Fixes
+--------------------------------------------------------------*/
+.woocommerce-page div.product div.images img {
+	width: inherit;
+}
+.woocommerce ul.products li.product h3 {
+	font-family: sans-serif;
+}
+.woocommerce ul.products li.product .button {
+	background-color: #871b1c;
+	color: #fff;
+}
+li.payment_method_paypal img {
+	width: inherit;
+}
